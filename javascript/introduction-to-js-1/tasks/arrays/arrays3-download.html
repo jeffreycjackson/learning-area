@@ -30,10 +30,13 @@
 
     // Add your code here
     
+    function addIndex(name, index) {
+        return `${name} (${index})`;
+    }
     myArray.pop();
     myArray.push('Bethany', 'Kiersten');
-    myArray.map(changer);
-    const myString = myArray.join('-');
+    const newArray = myArray.map(addIndex);
+    const myString = newArray.join('-');
 
     // Don't edit the code below here!
 
