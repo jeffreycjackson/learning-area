@@ -29,7 +29,14 @@
     const birds = [ "Parrots", "Falcons", "Eagles", "Emus", "Caracaras", "Egrets" ];
 
     // Add your code here
-
+ 
+    function findE(bird) {
+       return bird.startsWith('E');
+    }
+    const eagleIndex = birds.indexOf("Eagles");
+    birds.splice(eagleIndex, 1);
+    const eBirds = birds.filter(findE);
+    
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
